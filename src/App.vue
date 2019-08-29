@@ -1,17 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Quiz v-bind:quizObj="{questions: [ { 
+      text: 'Who is the Batman',
+      responses: [
+           {
+              text: 'Laughing Bat'
+           },
+           {
+              text: 'Bruce Wayne',
+              correct: true
+           },
+           {
+              text: 'Dick Grayson'
+           },
+           {
+              text: 'None of the above'
+           }
+        ]
+    }, {
+      text: 'this quiz is fun',
+      responses: [
+        {
+          text: 'Bruce Wayne',
+          correct: true
+        },
+      ]
+    } ]}"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Quiz from './components/Quiz.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Quiz
   }
 }
 </script>
