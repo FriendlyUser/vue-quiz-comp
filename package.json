@@ -1,6 +1,6 @@
 {
   "name": "vue_quiz_comp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple Quiz Component which may be hard to use",
   "author": {
     "name": "David Li",
@@ -8,10 +8,15 @@
   },
   "repository": "https://github.com/FriendlyUser/vue-quiz-comp",
   "bugs": "https://github.com/FriendlyUser/vue-quiz-comp/issues",
-  "keywords": ["quiz", "vue"],
+  "keywords": [
+    "quiz",
+    "vue"
+  ],
   "license": "MIT",
   "private": false,
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
