@@ -10,6 +10,13 @@ steps:
 - task: NodeTool@0 
   inputs:
     versionSpec: $(node_version)
+  trigger:
+    branches:
+      include:
+        - refs/heads/master
+    tags:
+      include:
+        - refs/tags/v*
 
 - script: |
     echo "//registry.npmjs.org/:_authToken=$(NPM_TOKEN)" > .npmrc
@@ -17,4 +24,3 @@ steps:
     npm build
     npm publish
   displayName: 'deploy'
-  condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/')
