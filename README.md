@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/vue_quiz_comp.svg)](https://badge.fury.io/js/vue_quiz_comp)
+
 [![Build Status](https://dev.azure.com/dli-grandfleet/vue_quiz_comp/_apis/build/status/FriendlyUser.vue-quiz-comp?branchName=master)](https://dev.azure.com/dli-grandfleet/vue_quiz_comp/_build/latest?definitionId=4&branchName=master)
 
 # vue_quiz_comp
