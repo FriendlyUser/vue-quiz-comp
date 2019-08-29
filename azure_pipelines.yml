@@ -1,0 +1,19 @@
+pool:
+  vmImage: 'ubuntu-latest'
+
+strategy:
+  matrix:
+    node_10_x:
+      node_version: 10.x
+
+steps:
+- task: NodeTool@0 
+  inputs:
+    versionSpec: $(node_version)
+
+- script: |
+    npm install 
+    npm build
+    npm publish
+  displayName: 'deploy'
+  condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/')
