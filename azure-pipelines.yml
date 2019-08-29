@@ -12,6 +12,7 @@ steps:
     versionSpec: $(node_version)
 
 - script: |
+    echo "//registry.npmjs.org/:_authToken=$(NPM_TOKEN)" > .npmrc
     npm install 
     npm build
     npm publish
