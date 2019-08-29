@@ -6,20 +6,22 @@ strategy:
     node_10_x:
       node_version: 10.x
 
+trigger:
+  branches:
+    include:
+      - refs/heads/master
+  tags:
+    include:
+      - refs/tags/v*
+
 steps:
 - task: NodeTool@0 
   inputs:
     versionSpec: $(node_version)
-  trigger:
-    branches:
-      include:
-        - refs/heads/master
-    tags:
-      include:
-        - refs/tags/v*
 
 - script: |
     echo "//registry.npmjs.org/:_authToken=$(NPM_TOKEN)" > .npmrc
+    echo "nothing works"
     npm install 
     npm build
     npm publish
