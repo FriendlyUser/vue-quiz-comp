@@ -21,6 +21,7 @@ steps:
 
 - script: |
     echo "//registry.npmjs.org/:_authToken=$(NPM_TOKEN)" > .npmrc
+    echo "nothing works"
     npm install 
     npm build
     npm publish
