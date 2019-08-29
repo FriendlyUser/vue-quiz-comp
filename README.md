@@ -1,7 +1,9 @@
 [![npm version](https://badge.fury.io/js/vue_quiz_comp.svg)](https://badge.fury.io/js/vue_quiz_comp)
+[![Build Status](https://dev.azure.com/dli-grandfleet/vue_quiz_comp/_apis/build/status/FriendlyUser.vue-quiz-comp?branchName=master)](https://dev.azure.com/dli-grandfleet/vue_quiz_comp/_build/latest?definitionId=4&branchName=master)
 
 # vue_quiz_comp
 
+## Using as component (see demo)
 Basic Quiz Component, to run you can do something simple such as shown in `App.vue`
 
 ```vue
@@ -57,6 +59,10 @@ export default {
 }
 </style>
 ```
+
+##  Usage in vuepress themes
+
+See https://github.com/FriendlyUser/vuepress-theme-cool-starter/blob/quizzes/docs/.vuepress/components/Quiz.vue
 
 ## Project setup
 ```
