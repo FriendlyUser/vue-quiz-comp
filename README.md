@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/vue_quiz_comp.svg)](https://badge.fury.io/js/vue_quiz_comp)
+
 # vue_quiz_comp
 
 Basic Quiz Component, to run you can do something simple such as shown in `App.vue`
