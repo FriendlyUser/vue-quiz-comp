@@ -14,15 +14,16 @@ trigger:
     include:
       - refs/tags/v*
 
+variables:
+- group: NPM Variables
 steps:
 - task: NodeTool@0 
   inputs:
     versionSpec: $(node_version)
 
 - script: |
-    echo "//registry.npmjs.org/:_authToken=$(NPM_TOKEN)" > .npmrc
-    echo "nothing works"
+    echo '//registry.npmjs.org/:_authToken=$(NPM_TOKEN)' > .npmrc
     npm install 
-    npm build
+    npm run build
     npm publish
   displayName: 'deploy'
